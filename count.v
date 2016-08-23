@@ -23,29 +23,23 @@ module count (
 );
 
 	// Input Port Declarations
-	input			clk;
-	input			rstn;
+	input	wire			clk;
+	input	wire			rstn;
 
 	// Output Port Declarations
-	output	[31:0]	cnt;
-
-	// Regs
-	reg		[31:0]	counter;
+	output	reg		[31:0]	cnt;
 
 	// Counter
 	always @ ( posedge clk )
 	begin : COUNTER
 		if ( rstn == 0 )
 		begin
-			counter <= 32'd0;
+			cnt <= 32'd0;
 		end
 		else
 		begin
-			counter <= counter + 1;
+			cnt <= cnt + 1;
 		end
 	end
-
-	// Assign outputs
-	assign cnt = counter;
 
 endmodule
