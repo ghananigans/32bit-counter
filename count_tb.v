@@ -28,7 +28,7 @@ module count_tb ();
 	// Generate a clock
 	initial
 	begin
-		clk = 0;
+		clk = 1;
 		forever #5 clk = ~clk;
 	end
 
@@ -36,6 +36,10 @@ module count_tb ();
 	initial
 	begin
 		rstn = 0;
+		#10 rstn = 1;
+
+		// cnt sound be 10. Reset now.
+		#100 rstn = 0;
 		#10 rstn = 1;
 	end
 
