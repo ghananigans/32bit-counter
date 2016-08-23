@@ -1,8 +1,7 @@
 /*
  * MODULE: count_tb
  *
- * DESCRIPTION: Testbench for 32-bit counter with an active-low synchronous
- *              reset.
+ * DESCRIPTION: Testbench for count module.
  *
  * PARAMETERS:
  *   N/A

@@ -1,8 +1,7 @@
 /*
- * MODULE: top
+ * MODULE: top_tb
  *
- * DESCRIPTION: Testbench for 2x 32-bit counters (module count) that will have
- *              their outputs compared.
+ * DESCRIPTION: Testbench for top module.
  *
  * PARAMETERS:
  *   N/A
